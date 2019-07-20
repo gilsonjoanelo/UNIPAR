@@ -1,0 +1,22 @@
+.error {
+	color: red;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.imgLink {
+	cursor: pointer;
+}
+
+.hideImpressao {
+
+}
+
+@media print  {
+	.hideImpressao {
+		visibility: collapse;
+		display: none;
+	}
+}

@@ -1,0 +1,15 @@
+#RewriteEngine On
+#<Files *.*>
+#	order allow,deny
+#	deny from all
+#</Files>
+
+Options +FollowSymLinks -MultiViews
+# Turn mod_rewrite on
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{HTTP_HOST} ^localhost$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^www.localhost$ 
+RewriteCond %{REQUEST_URI} !AtividadeReflexiva/
+RewriteRule (.*) /AtividadeReflexiva/$1 [L]
