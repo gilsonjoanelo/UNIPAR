@@ -1,4 +1,4 @@
-package com.example.armobile.ui.gallery;
+package com.example.myapplication.ui.gallery;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

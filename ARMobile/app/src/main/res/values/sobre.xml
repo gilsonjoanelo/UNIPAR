@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sobre">Este aplicativo foi desenvolvido para atender a solicitação da atividade
+        reflexiva da disciplina de <b>Programação de Dispositivos Móveis</b> da Universidade Paranaense (UNIPAR).</string>
+    <string name="sobre_item1">Utilizar 3 activities</string>
+    <string name="sobre_item2">Criar um layout de lista com RecyclerView e Cardview</string>
+    <string name="sobre_item3">Criar menu na appBar</string>
+    <string name="sobre_item4">Troca de dados entre activities</string>
+</resources>
