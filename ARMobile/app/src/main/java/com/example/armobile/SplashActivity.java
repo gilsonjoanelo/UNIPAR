@@ -20,7 +20,6 @@ public class SplashActivity extends AppCompatActivity {
 
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
-            @Override
             public void run() {
                 mostrarMainActivity();
             }
