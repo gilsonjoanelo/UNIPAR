@@ -1,5 +1,6 @@
 package com.example.armobile;
 
+import android.Manifest;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -56,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onDestinationChanged(@NonNull NavController controller, @NonNull NavDestination destination, @Nullable Bundle arguments) {
                 final int currentId = destination.getId();
-                if(currentId == R.id.nav_home) {
+                if (currentId == R.id.nav_home) {
                     fab.setVisibility(View.VISIBLE);
                 } else {
                     fab.setVisibility(View.GONE);
@@ -73,12 +74,12 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        if(item.getItemId() == R.id.action_sobre){
+        if (item.getItemId() == R.id.action_sobre) {
             Intent intent = new Intent(this, SobreActivity.class);
             intent.putExtra("TrocaDados", true);
             startActivity(intent);
             return true;
-        } else if(item.getItemId() == R.id.action_dados_pessoais){
+        } else if (item.getItemId() == R.id.action_dados_pessoais) {
             this.navController.navigate(R.id.nav_dados_pessoais);
         }
         return super.onOptionsItemSelected(item);
