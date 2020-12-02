@@ -40,13 +40,7 @@ public class SplashActivity extends AppCompatActivity {
         }
 
         if (liberado) {
-            iniciarAnimacao();
-            Handler handler = new Handler();
-            handler.postDelayed(new Runnable() {
-                public void run() {
-                    mostrarMainActivity();
-                }
-            }, 3000);
+            iniciarApp();
         }
     }
 
@@ -54,6 +48,7 @@ public class SplashActivity extends AppCompatActivity {
     public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
         if (requestCode == PERMISSION_ALL_INTENT) {
             retornoResult = true;
+            iniciarApp();
         }
     }
 
@@ -67,6 +62,16 @@ public class SplashActivity extends AppCompatActivity {
             }
         }
         return true;
+    }
+
+    private void iniciarApp(){
+        iniciarAnimacao();
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            public void run() {
+                mostrarMainActivity();
+            }
+        }, 3000);
     }
 
     private void mostrarMainActivity() {
