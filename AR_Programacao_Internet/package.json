@@ -1,0 +1,26 @@
+{
+  "name": "ar_programacao_internet",
+  "version": "1.0.0",
+  "description": "Site para demonstrar as operações solicitadas pela AR",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "debug": "debug.bat"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gilsonjoanelo/UNIPAR/tree/master/AR_Programacao_Internet"
+  },
+  "keywords": [
+    "ead",
+    "unipar"
+  ],
+  "author": "Gilson Joanelo <gilsonjoanelo@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1",
+    "bootstrap": "^4.6.0",
+    "@types/jquery": "^3.5.5"
+  }
+}
